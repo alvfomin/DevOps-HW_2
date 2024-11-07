@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: username/my-nginx:latest
+    ports:
+      - "80:80"
+
+  postgres:
+    image: username/my-postgres:latest
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword

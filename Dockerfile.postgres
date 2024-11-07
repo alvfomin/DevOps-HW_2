@@ -1,0 +1,5 @@
+# Используем официальный образ PostgreSQL
+FROM postgres:latest
+
+# Копируем скрипт для создания пользователя и базы данных
+COPY init.sql /docker-entrypoint-initdb.d/

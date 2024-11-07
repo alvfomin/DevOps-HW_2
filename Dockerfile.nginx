@@ -1,0 +1,8 @@
+# Используем базовый образ Alpine
+FROM nginx:alpine
+
+# Копируем конфигурационный файл nginx в контейнер
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Открываем порт 80
+EXPOSE 80
